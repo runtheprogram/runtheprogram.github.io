@@ -8,6 +8,13 @@ let animRequestId = null;
 
 
 
+document.addEventListener('pointerdown', evt => {
+    lastX = evt.x;
+    lastY = evt.y;
+
+    return scheduleNextDraw(lastX, lastY);
+});
+
 document.addEventListener('pointermove', evt => {
     lastX = evt.x;
     lastY = evt.y;
