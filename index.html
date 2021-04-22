@@ -35,6 +35,9 @@
         }
 
         body {
+            position: fixed;
+            left: 0px;
+            top: 0px;
             display: flex;
             flex-direction: column;
             border: 10px solid green;
@@ -52,8 +55,12 @@
         }
 
         header>.container {
-            font-size: 1.4em;
+            font-size: 1.2em;
             border: 10px solid red;
+        }
+
+        header h3 {
+            text-align: center;
         }
 
         header p {
@@ -95,9 +102,18 @@
                 <p>Rotterdam</p>
                 <p>The Netherlands</p>
             </h3>
+            <ul class="social">
+                <li>
+            <a href="https://instagram.com/run.the.program" target="_blank">
+                <img src="instagram.svg" />
+            </a>
+            </li>
+            </ul>
+
         </div>
+        
     </header>
-    <footer class="footer text-center">
+    <!-- <footer class="footer text-center">
         <div class="container">
             <ul class="social">
                 <li>
@@ -113,7 +129,7 @@
             </ul>
             <p class="text-muted small mb-0">Copyright &copy; RTP 2021</p>
         </div>
-    </footer>
+    </footer> -->
     <canvas id="canvas" width=900 height=700></canvas>
     <Script src="reflect.js"></Script>
 </body>
